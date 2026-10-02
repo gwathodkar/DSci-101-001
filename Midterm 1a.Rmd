@@ -1,0 +1,127 @@
+---
+title: "Midterm 1"
+author: "YOUR NAME HERE"
+output: html_document
+editor_options: 
+  chunk_output_type: console
+---
+
+### **Instructions**
+
+Below is the Midterm 1 for DSCI 101 - Fall 2026. This exam should be written only by the student during exam hours. 
+
+You are allowed to consult: 
+
+* Class notes.
+* Handwritten notes.
+* Class R Scripts. 
+* Class homework. 
+* Help buttons in R. 
+
+You are NOT allowed to: 
+
+* Search for answers using search engines such as Google. 
+* Search for answers using artificial intelligence programs such as ChatGPT.
+* Consult with anyone 
+
+**If you are found to be working with someone else or have used AI softwares to produce your answers, an automatic 0 will be given on the midterm exam and you will be reported to the Dean's Office.**
+
+Write down your code inside the code chunk.
+
+### **File submitted in HTML/PDF Format **
+
+Submit the html/PDF file in Sakai before the deadline. Files in other format WILL NOT BE ACCEPTED.
+
+
+### **Question 1**
+ 
+
+#### 1.1
+#(15 points)
+Create a function to compute the total annual salary tax based on the state. 
+For simplification, we only consider two states. In short, your function will contain two
+arguments: (1) Salary; (2) State. The tax is the summation of federal and state tax.
+
+Some basic information are given as follows:
+
+Federal tax rate: 
+
+| Income Range     | Rate |
+| ---------------- | ---- |
+| 0 – 11,000       | 10%  |
+| 11001 – 44725    | 12%  |
+| 44726 – 95375    | 22%  |
+| 95376 – 182100   | 24%  |
+| Above 182100     | 32%  |
+
+Florida state tax rate: 0%
+
+Illinois state tax rate:4.95%
+
+Test your functions on the example `Tom (80000, IL)`
+
+```{r}
+
+```
+
+#### 1.2
+(10 points)
+Utilize the for loop to test function defined in Question 1.1 on following information of four people. 
+
+```{r}
+name <- c("Tom","Peter","Emma", "Sophia")
+salary <- c(50000, 70000, 200000, 110000)
+state <- c("IL","FL","FL","IL")
+```
+
+For each iteration, print the sentence as, `name` comes from `state` and the tax is `your_answer_by_function`
+
+
+
+```{r}
+
+```
+ 
+### **Question 2**
+
+Use functions learned from the `tidyverse` package to complete this question. Load all the packages you will use throughout this exam in the loading packages section below.
+
+
+### **Loading Packages**
+(5 points)
+```{r, message=FALSE, warning=FALSE}
+
+
+```
+
+#### 2.1
+(5 points)
+#Load the dataset `penguins` from the package.
+
+#DO NOT PRINT THE DATA SINCE WE HAVE 344 rows
+
+```{r}
+
+```
+
+#### 2.2 
+(15 points)
+Select the columns `island`, `bill length`and `body mass`. Define the new dataframe as `our_data`. DO NOT PRINT the resulting matrix, but you can check it by yourself.
+
+```{r}
+
+```
+
+
+#### 2.3
+(15 points)
+With `our_data`, find the average `body mass` of the penguins on different islands.
+
+Make sure there are no missing values in your final answer.
+
+PRESENT the final answer.
+
+```{r}
+
+```
+
